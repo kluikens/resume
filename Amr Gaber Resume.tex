@@ -1,0 +1,238 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{tabularx}
+
+% Uncomment the following lines to use the Palatino font.  Remove the
+% [osf] bit if you don't like the old style figures.
+%
+\usepackage[T1]{fontenc}
+\usepackage[osf]{mathpazo}
+
+% To install luximono on Ubuntu 8.04:
+%   1) Create the directory /usr/local/share/texmf
+%   2) sudo getnonfreefonts-sys luximono
+%\usepackage[scaled]{luximono}
+%\renewcommand\ttdefault{ul9} % luximono
+
+% Set your name here
+\def\name{Amr Gaber}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science resume},
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 11in},
+  left=1.0in,
+  top=0.5in,
+  bottom=0.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Customize section headings
+%\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\sectionfont{\large}
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+
+% Alternative section fonts:
+%\sectionfont{\rmfamily\bfseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+\begin{minipage}[t]{0.4\textwidth}
+	% Place name at left
+	\hspace{-15pt}
+	{\Huge \name}  
+	% Alternatively, print name centered and bold:
+	%\centerline{\huge \bf \name}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+  421 Cypress Ave \\
+  Kansas City, MO 64124 \\
+  \href{tel:+01-816-875-0378}{816.875.0378} \\
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+  \href{mailto:amrtgaber@gmail.com}{amrtgaber@gmail.com} \\
+  \href{github.com/amrtgaber}{github.com/amrtgaber} \\
+  \href{linkedin.com/in/amrtgaber}{linkedin.com/in/amrtgaber} \\
+\end{minipage}
+
+% Languages and Tools
+\begin{tabularx}{\textwidth}{ X X X X X X X X }
+\textbf{Languages}  &          & \textbf{Frameworks}          &          & \textbf{Tools} &          & \textbf{Databases} &         \\
+Typescript          & 6 months & Angular 2                    & 6 months & Webpack        & 6 months & Redis              & 1 years \\
+ES2015              & 1 year   & \footnotesize{Mocha~\&~Chai} & 6 months & Docker         & 6 months & Mongo              & 2 years \\
+Javascript          & 5 years  & SCSS                         & 1 years  & NPM            & 2 years  & MySQL              & 5 years \\
+HTML5               & 5 years  & Node                         & 2 years  & nginx          & 2 years  &                    &         \\
+CSS3                & 5 years  & Bootstrap                    & 4 years  & Git            & 5 years  &                    &         \\
+                    &          & jQuery                       & 5 years  &                &          &                    &         \\
+\end{tabularx}
+
+% Professional Experience
+\section*{\centering Professional Experience}
+
+\subsection*{Kinetic Supply Company \hfill May 2015 - Present}
+\begin{itemize}
+\item \textbf{Web Developer, Release Manager}
+  \begin{itemize}
+  \item \textbf{Internal}
+  \item Integrated database and polished front end UX for dozens of pages.
+  \item Architected promise based data flow and restful api for 5 microservices.
+  \item Introduced 4 person team to BDD and wrote 20+ unit and integration tests for each microservice.
+  \end{itemize}
+  
+  \begin{itemize}
+  \item \textit{Node, Express, Angular 1 \& 2, Typescript, SCSS, Bootstrap, \small{Mocha \& Chai}, Mongo, Redis, Git, Docker, Webpack}
+  \end{itemize}
+  
+  \begin{itemize}
+  \item \textbf{Consulting}
+  \item Aided with full stack maintenance and refactoring of huge legacy PHP website.
+  \item Overhauled front end of 40+ pages to a mobile first, modern design.
+  \item Redesigned release process for 7 person team and performed releases using agile methods.
+  \item Built small 3 page, SPA analytics dashboard for a Learning Management System with Angular 2.
+  \end{itemize}
+
+  \begin{itemize}
+  \item \textit{PHP, Laravel, MySQL, HTML5, CSS3, Javascript, Angular 2, Typescript, Webpack, Bootstrap, Agile, Docker}
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Midwest Center for Equality and Democracy \hfill Aug 2012 - May 2015}
+\begin{itemize}
+\item \textbf{Software and Data Lead}
+\item Primary developer for member and event processing database with thousands of members.
+\item Implemented jQuery Mobile based web app to calculate weekly work hours.
+\item Maintained data, website and social media which included migrating to Voter Action Network.
+%\item \textit{Technologies used:}
+  \begin{itemize}
+  \item \textit{PHP, MySQL, jQuery, HTML5, CSS3, Bootstrap, jQuery Mobile, Git, AJAX, APACHE}
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Garmin International \hfill Aug 2011 - Aug 2012}
+\begin{itemize}
+\item \textbf{Software Engineer}
+%\item Designed, documented and implemented new features for embedded marine products.
+%\item Collaborated with a team using Agile to adapt to changing requirements.
+%\item Tested and reviewed teammates' code on a regular basis.
+%\item \textit{Technologies used:}
+  \begin{itemize}
+  \item \textit{C, Git, Visual Studio, Agile}
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Texas Children's Hospital \& Baylor College of Medicine \hfill May 2011 - Aug 2011}
+\begin{itemize}
+\item \textbf{Software Engineer Intern}
+%\item Refactored and implemented robust iPhone app to display anatomical slides and atlases.
+%%\item Acquired art and data through third party collaborators to create a complete user experience.
+%\item \textit{Technologies used:}
+  \begin{itemize}
+  \item Objective-C, iOS
+  \end{itemize}
+\end{itemize}
+
+\vspace{-30pt}
+
+% Education
+\section*{\centering Education}
+\subsection*{University of Arizona \hfill May 2011}
+\begin{itemize}
+  \item B.S. Computer Science, \textit{magna cum laude}
+  \item GPA 3.82
+\end{itemize}
+
+%\section*{\centering Research}
+
+%\subsection*{University of Arizona \hfill May 2009 - May 2011} % May 2009 - May 2010, Jan 2011 - May 2011
+%\begin{itemize}
+%\item \textbf{Malware Analysis}
+%\item Traced through and analyzed malware using a debugger, hypervisor, and virtualization technologies.
+%\item Identified obfuscated code in order to construct an automated decompiler % that could produce source code level output.
+%\end{itemize}
+
+%\subsection*{University of Arizona \hfill May 2009 - May 2010}
+%\begin{itemize}
+%\item \textbf{Robotics}
+%\item Developed software to operate robots.
+%\item Designed learning task for robot to experiment with artificial intelligence algorithms.
+%\item Troubleshot and fixed bugs on machine learning platform for department robots.
+%; Robot used knowledgebase and sensory input to perform facial recognition and socialize with human users. %\href{http://www.cs.arizona.edu/~cohen/cs-665-spring-2010/teams/tasks/cogarchmeetgreet.ppt.pdf}{Cognitive Architecture:}
+%\end{itemize}
+
+%\section*{\centering Assistant Teaching}
+
+%\subsection*{Intro to Programming in Python \hspace*{6.82cm} Aug 2010 - May 2011}
+%\begin{itemize}
+%\item Taught 1 hour a week followed by 1 hour of leading a programming lab. 
+%\item	Instructed a 2 hour lab; mix of lecture \& guided programming.
+%\item Graded assignments and exams. 
+%\item	Held office hours 2 hours a week; troubleshot students' programs and educated students on basic debugging techniques.
+%\item Designed class assignment that taught students file I/O.
+%\item Designed a project that was used by the professors. 
+%\end{itemize}
+
+%\section*{Relevant Coursework}
+%\begin{itemize}
+%\item Algorithms \\
+%Automata, Languages, and Grammars \\
+%Cognitive Architecture \\
+%Compilers and Systems Software, \textit{Honors} \\
+%Game Design and Development \\
+%Parallel and Distributed Programming \\
+%Principles of Operating Systems \\
+%Secure Web Development
+%\end{itemize}
+%\end{minipage}
+%\begin{minipage}[t]{0.33\textwidth}
+%\section*{Academic Awards}
+%\begin{tabular}{ l l }
+%Fall 2008 & \textit{Dean's List with Distinction} \\
+%Spring 2009 & \textit{Dean's List with Distinction} \\
+%Fall 2009 & \textit{Dean's List} \\
+%Spring 2010 & \textit{Dean's List with Distinction} \\
+%Fall 2010 & \textit{Dean's List with Distinction} \\
+%Spring 2011 & \textit{Dean's List}
+%\end{tabular}
+
+\end{document}
